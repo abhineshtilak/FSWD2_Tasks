@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- Defines the document as HTML5 so the browser uses modern standards mode -->
+<html lang="en">
+<!-- 'lang' helps screen readers & SEO understand the language of the page -->
+<head>
+    <meta charset="UTF-8">
+    <!-- UTF-8 supports all languages & emojis → prevents text from breaking -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Makes the page responsive on mobile. Without this, page looks zoomed-out. -->
+
+    <title>HTML Revision File</title>
+    <!-- Title shown in browser tab, bookmarks, and search engine results -->
+</head>
+<body>
+
+    <!-- ========================= FORM SECTION ========================= -->
+    <form action="">
+
+        <!-- Text input example -->
+        Name: 
+        <input type="text"> <br>
+
+        <!-- Radio buttons with labels connected using for=id  -->
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" value="Female" id="Female">
+
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" value="Male" id="Male">
+
+        <!-- Color picker input -->
+        <label for="color">Select Color</label>
+        <input type="color" name="color" id="color" >
+
+        <!-- File upload input -->
+        <label for="file">Please upload the file</label>
+        <input type="file" id="file">
+
+        <!-- Search input → gives browser search styling -->
+        <input type="search">
+
+        <!-- Date picker -->
+        <input type="date">
+
+        <!-- Range slider -->
+        <input type="range">
+
+        <!-- Hidden input → invisible, used to store background form data -->
+        <input type="hidden">
+
+        <!-- Label wrapping a select dropdown → clicking label focuses dropdown -->
+        <label>Select your city
+        <select>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Kolkata</option>
+        </select>
+        </label>
+
+        <!-- Checkbox group wrapped inside labels → better usability -->
+        <p>Choose your hobbies</p>
+        <label><input type="checkbox">Cricket</label>
+        <label><input type="checkbox">Football</label>
+        <label><input type="checkbox">Chess</label>
+    </form>
+
+
+
+    <!-- ========================= DATALIST ========================= -->
+    <!-- Input with auto-suggestions -->
+    <input list="languages" name="lang" >
+    <datalist id="languages">
+      <option value="HTML">
+      <option value="CSS">
+      <option value="JavaScript">
+      <option value="Python">
+    </datalist>
+
+
+
+
+    <!-- ========================= DETAILS + SUMMARY ========================= -->
+    <!-- Creates a dropdown-like toggle box → good for FAQs -->
+    <details>
+      <summary>What is HTML?</summary>
+      <p>HTML stands for HyperText Markup Language.</p>
+    </details>
+
+
+    <!-- ========================= METER TAG ========================= -->
+    <!-- Displays a measurement or score → good for performance indicators -->
+    <meter value="10" min="0" max="10" low="3" high="8" optimum="9"></meter>
+
+
+    <!-- ========================= DOWNLOAD ATTRIBUTE ========================= -->
+    <!-- Forces download instead of opening the file normally -->
+    <a href="dogImage.jpg" download="dogImage.jpg">Download image</a>
+
+
+    <!-- ========================= CONTENTEDITABLE ========================= -->
+    <!-- Allows user to edit text directly inside the div -->
+    <div contenteditable="true">Click here to edit this text.</div>
+
+
+    <!-- ========================= TEXTAREA ========================= -->
+    <!-- spellcheck=false turns off red underlines -->
+    <textarea spellcheck="false"></textarea>
+
+
+    <!-- ========================= FIELDSET & LEGEND ========================= -->
+    <!-- Used to group form elements together visually -->
+    <fieldset>
+        <legend>This is a form</legend>
+    </fieldset>
+
+
+    <!-- ========================= ORDERED LIST ========================= -->
+    <!-- type changes numbering style, start sets starting point, reversed counts backwards -->
+    <ol type="I" start="5" reversed>
+            <li>Introduction</li>
+            <li>Concepts</li>
+            <li>Example</li>
+    </ol>
+
+    <!-- ========================= UNORDERED LIST ========================= -->
+    <!-- type can be disc, circle, square -->
+    <ul type="disc">
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Pineapple</li>
+    </ul>
+
+    <!-- ========================= NESTED LIST ========================= -->
+    <ul>
+      <li>Frontend
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+        </ul>
+      </li> 
+      <li>Backend</li>
+    </ul>
+
+
+    <!-- ========================= DESCRIPTION LIST ========================= -->
+    <!-- dt = term, dd = description -->
+     <dl>
+      <dt>HTML</dt>
+      <dd>Markup language for creating webpages.</dd>
+
+      <dt>CSS</dt>
+      <dd>Used for styling HTML pages.</dd>
+    </dl>
+
+
+    
+    <!-- ========================= TABLE ========================= -->
+    <!-- th = header, td = data, tr = row -->
+     <table border="1">
+        <tr>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Aman</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sumit</td>
+        </tr>
+     </table>
+
+
+    <!-- ========================= VIDEO ========================= -->
+    <!-- controls attribute enables play/pause options -->
+    <video controls src="video.mp4"></video>
+
+    <!-- ========================= AUDIO ========================= -->
+    <audio controls src="song.mp3"></audio>
+
+
+    <div class="embed-map-fixed"><div class="embed-map-container"><iframe class="embed-map-frame" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&height=400&hl=en&q=Delhi&t=&z=14&ie=UTF8&iwloc=B&output=embed"></iframe><a href="https://map-embed.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">google maps generator</a><a href="https://cartoongames.io/channel/cartoon-network" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:10px;overflow:hidden">Cartoon Network Games</a></div><style>.embed-map-fixed{position:relative;text-align:right;width:600px;height:400px;}.embed-map-container{overflow:hidden;background:none!important;width:600px;height:400px;}.embed-map-frame{width:600px!important;height:400px!important;}</style></div>
+
+
+    <dialog close>
+  <p>This is a dialog box.</p>
+</dialog>
+
+
+<time datetime="2025-01-20">20 Jan 2025</time>
+
+<p>This is <mark>important</mark> text.</p>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EDTECH: Semantic HTML Exercise</title>
+
+  <!--
+    INSTRUCTIONS FOR STUDENTS (READ BEFORE CODING)
+    ------------------------------------------------
+    - You must use semantic HTML5 tags (header, nav, main, article, section, aside, footer, figure, figcaption, etc.)
+    - Avoid unnecessary <div> except when no semantic tag fits (explain your use in comments).
+    - Keep proper heading hierarchy (h1 → h2 → h3). Exactly one <h1> on the page.
+    - Make one <main> only.
+    - Add accessible attributes where relevant (alt, aria-labelledby, datetime for time, etc.)
+    - Replace placeholder comments with actual HTML elements and content.
+    - DO NOT change the structure outside of filling in the commented tasks.
+    - Add meaningful placeholder text/content — imagine this is a real EdTech landing + lesson page.
+  -->
+</head>
+<body>
+
+  <!-- ======================================================
+       HEADER + NAV
+       ====================================================== -->
+  <header>
+    <!-- TASK 1:
+         - Add the page <h1> (site title) here.
+         - Add a short tagline under the h1 (use a paragraph or a small).
+         - Create a <nav> containing a <ul> list of 4 links (Home, Courses, Blog, Contact).
+         - Make sure nav is keyboard accessible (semantic list + anchors).
+         - Add an 'id' on the h1 to reference from aria-labelledby in main (you will use it later).
+    -->
+  </header>
+
+  <!-- ======================================================
+       MAIN (only one on page)
+       ====================================================== -->
+  <main aria-labelledby="site-title">
+    <!-- NOTE: Replace the comment below by the id you gave to your <h1>
+         Example: <main aria-labelledby="site-title"> if your h1 id="site-title" -->
+    
+    <!-- ======================================================
+         HERO / INTRO SECTION
+         ====================================================== -->
+    <section aria-labelledby="intro-title">
+      <!-- TASK 2 (Hero):
+           - Add a header for this section with <h2 id="intro-title"> (e.g., "Learn with Us")
+           - Write a short intro paragraph describing the EdTech platform.
+           - Add a call-to-action link styled as a button (just the anchor; no CSS needed).
+           - Include a small list (<ul>) of 3 key benefits (use <li>).
+      -->
+    </section>
+
+    <!-- ======================================================
+         FEATURED LESSON (This should be an independent piece)
+         ====================================================== -->
+    <article aria-labelledby="featured-lesson-title">
+      <!-- TASK 3 (Featured Lesson Article):
+           - Add <header> inside the article with an <h2 id="featured-lesson-title"> (lesson title)
+           - Under the header add a short summary paragraph (why it matters).
+           - Add a <figure> containing an image (use img src="lesson.jpg" as placeholder)
+             * Provide a descriptive alt text for the image.
+             * Add <figcaption> describing the image.
+           - Add a <section> inside the article describing "What you'll learn"
+             * Use <h3> for the section title and an ordered list (<ol>) of 4 learning points.
+           - At article bottom add a <footer> with author name and <time datetime="..."> for date.
+      -->
+    </article>
+
+    <!-- ======================================================
+         MULTIMEDIA SECTION
+         ====================================================== -->
+    <section aria-labelledby="media-title">
+      <!-- TASK 4 (Multimedia):
+           - Add <h2 id="media-title">Media</h2>
+           - Embed one YouTube video:
+             * Use <iframe> with a placeholder embed URL: https://www.youtube.com/embed/VIDEO_ID
+             * Provide a title attribute for the iframe.
+           - Add an <audio> player with controls using src="audio-sample.mp3" (placeholder)
+           - Add a downloadable image link:
+             * Create an anchor that downloads an image file when clicked:
+               <a href="downloadable-image.jpg" download>Download Course Poster</a>
+             * Also include an <img> (thumbnail) next to the link with alt text.
+      -->
+    </section>
+
+    <!-- ======================================================
+         CURRICULUM TABLE (structured data)
+         ====================================================== -->
+    <section aria-labelledby="curriculum-title">
+      <!-- TASK 5 (Curriculum Table):
+           - Add an <h2 id="curriculum-title">Curriculum</h2>
+           - Create a table with these columns: Module, Duration, Type
+           - Add at least 4 rows of sample modules (use <thead>, <tbody>, and <th>)
+           - Make sure the table has a summary caption or an accessible caption element
+      -->
+    </section>
+
+    <!-- ======================================================
+         FAQ (use details/summary)
+         ====================================================== -->
+    <section aria-labelledby="faq-title">
+      <!-- TASK 6 (FAQ with details/summary):
+           - Add <h2 id="faq-title">FAQ</h2>
+           - Create 3 <details> elements.
+           - Each <details> must use <summary> as the question and a <p> as the answer.
+           - Ensure answers can contain small lists (<ul>) where appropriate.
+      -->
+    </section>
+
+    <!-- ======================================================
+         GALLERY (figures) + ASIDE (related links)
+         ====================================================== -->
+    <section aria-labelledby="gallery-title">
+      <!-- TASK 7 (Gallery):
+           - Add <h2 id="gallery-title">Gallery</h2>
+           - Create a simple gallery of 4 images using <figure> for each image
+             * Each figure must include <img src="..."> with alt and <figcaption>.
+           - No inline styles necessary; focus on semantics.
+      -->
+    </section>
+
+    <aside aria-labelledby="related-title">
+      <!-- TASK 8 (Aside / Related):
+           - Add an <h2 id="related-title">Related Resources</h2>
+           - Add an unordered list (<ul>) with at least 5 links to external resources.
+           - For one external link, add rel="noopener noreferrer" and target="_blank".
+      -->
+    </aside>
+
+    <!-- ======================================================
+         SIGNUP / CONTACT (FORM)
+         ====================================================== -->
+    <section aria-labelledby="contact-title">
+      <!-- TASK 9 (Contact / Signup Form):
+           - Add <h2 id="contact-title">Sign up</h2>
+           - Create a form with:
+             * label + input for Full Name (required)
+             * label + input for Email (required, type="email")
+             * label + textarea for Message
+             * a submit button
+           - Use <label for="..."> properly and associate inputs using id attributes.
+           - Add an aria-live region (e.g., <div aria-live="polite"></div>) where form submission messages would appear.
+      -->
+    </section>
+
+  </main>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer>
+    <!-- TASK 10 (Footer):
+         - Add site copyright information.
+         - Add a small navigation or legal links (Privacy, Terms).
+         - Include an <address> element with an email contact (mailto:).
+    -->
+  </footer>
+
+  <!-- ======================================================
+       EXTRA CHALLENGE (optional, bonus)
+       ======================================================
+       - Add JSON-LD structured data for an Article or Course in a <script type="application/ld+json"> tag inside the <head>.
+       - Add aria-describedby or aria-labelledby relationships where it improves clarity.
+       - Ensure every image has an alt attribute.
+       - Explain (in comments at the top of the file) any remaining <div> uses you kept and why (accessibility + semantic reasoning).
+  -->
+
+</body>
+</html>
